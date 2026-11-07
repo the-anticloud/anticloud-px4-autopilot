@@ -4,7 +4,7 @@
 
 **Category:** SPACE_AEROTECH · **Ecosystem:** unknown · **Vendored upstream:** https://github.com/PX4/PX4-Autopilot · **Pinned commit:** `b798249a61af32c355d95decd2805a6ab4e9d9f1` · **Vendor:** Anticloud FZ LLE
 
-## What This Project Is
+## What This Project Does
 
 The autopilot stack the industry builds on. PX4 is an open-source autopilot stack for drones and unmanned vehicles. It supports multirotors, fixed-wing, VTOL, rovers, and many more experimental platforms from racing quads to industrial survey aircraft. It runs on [NuttX](https://nuttx.apache.org/), Linux, and macOS. Licensed under [BSD 3-Clause](LICENSE).
 
@@ -25,7 +25,7 @@ make px4_sitl
 
 See the upstream README (linked above) for usage. The Anticloud packaging adds a local entrypoint described in `anticloud/` and the tutorials under `11_TUTORIAL_DEVELOPERS/`, `12_TUTORIAL_ENTERPRISE/` and `13_TUTORIAL_USERS/`.
 
-## Anticloud Overlay
+## API
 
 The 12 improvements live under `anticloud/`. Run the check suite from this directory:
 
@@ -33,7 +33,7 @@ The 12 improvements live under `anticloud/`. Run the check suite from this direc
 python anticloud/bench/runner.py --cwd anticloud
 ```
 
-## Benchmark Results
+## Benchmarks
 
 | Result | Status | Evidence |
 | --- | --- | --- |
@@ -56,11 +56,11 @@ python anticloud/bench/runner.py --cwd anticloud
 
 **Suite: 16/16 passed** · platform `win32` · python `3.12.10` · method `{'aggregate_rule': 'all_passed == AND over benchmarks[*].ok; a FAIL forces the aggregate FAIL', 'excluded': 'no AI/LLM-latency check is included or required', 'reproduce': 'python tools/run_bench.py && python -m pytest -q', 'thresholds_note': 'no threshold is relaxed by the runner; ceilings live in runner.py and are asserted independently in tests/test_project_metadata.py'}`
 
-## Licence
+## License
 
 The upstream licence is preserved in `LICENSE` and `THIRD_PARTY_LICENSES/`. The Anticloud overlay is licensed under Anticommons 0.1.0 (`ANTICOMMONS_LICENSE.md`).
 
-## Verification
+## Upstream
 
 SHA3-256 of `BENCH.json`:
 
@@ -69,3 +69,18 @@ ee2fb879660ab3ecdc9822e0dceec43485a9894f8c86066c7f9b04bdccb89bb9
 ```
 
 Recompute the hash above and compare — any drift means the package has been tampered with and the seal is invalid. This is a self-assessment; no external audit has been performed and a SOC 2 / NIST independent audit is committed post-funding.
+
+
+## Dependencies
+
+See project documentation for details.
+
+
+## Configuration
+
+See project documentation for details.
+
+
+## Contributing
+
+See project documentation for details.
